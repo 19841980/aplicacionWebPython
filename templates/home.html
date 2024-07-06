@@ -1,0 +1,113 @@
+{%extends 'index.html'%}
+
+{%block title%}Music pro - Home{%endblock%}
+
+{%block content%}
+
+<div class="container">
+    <h3>Nuestros Productos</h3>
+    <div class="container my-3 mx-3">
+        <ul class="list-unstyled d-flex">
+
+            {%for product in products%}
+         <li>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="card imgcap">
+                    <div>
+                        <h5 class="card-title">{{product.title}}</h5>
+                        <p class="card-text">{{product.decription}}</p>
+                    </div>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item"> Product Price{{product.price}}</li>
+                        <a href="#" class="card-link text-center my-2">Comprar producto</a>
+                    </ul>
+            </div>
+         </li>
+         <li>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="card img cap">
+                    <div>
+                        <h5 class="card-title">Guitarra Acustica</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                    </div>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">Precio producto: $160.000</li>
+                        <a href="#" class="card-link text-center my-2">Comprar producto</a>
+                    </ul>
+            </div>
+         </li>
+         <li>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="card img cap">
+                    <div>
+                        <h5 class="card-title">Guitarra española</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                    </div>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">Precio producto: $160.000</li>
+                        <a href="#" class="card-link text-center my-2">Comprar producto</a>
+                    </ul>
+            </div>
+         </li>
+         <li>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="card img cap">
+                    <div>
+                        <h5 class="card-title">Guitarra Electrica</h5>
+                        <p class="card-text"> Descripcion del producto</p>
+                    </div>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">Precio producto: $160.000</li>
+                        <a href="#" class="card-link text-center my-2">Comprar producto</a>
+                    </ul>
+            </div>
+         </li>
+         
+        
+         <li>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="card img cap">
+                    <div>
+                        <h5 class="card-title">Organo 5 octavas</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                    </div>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">Precio producto: $160.000</li>
+                        <a href="#" class="card-link text-center my-2">Comprar producto</a>
+                    </ul>
+            </div>
+         </li>
+        
+         <li>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="card img cap">
+                    <div>
+                        <h5 class="card-title">Flauta Traversa</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                    </div>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">Precio producto: $160.000</li>
+                        <a href="#" class="card-link text-center my-2">Comprar producto</a>
+                    </ul>
+            </div>
+         </li>
+         <li>
+            <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="card img cap">
+                    <div>
+                        <h5 class="card-title">Saxo soprano etinger</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                    </div>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">Precio producto: $160.000</li>
+                        <a href="#" class="card-link text-center my-2">Comprar producto</a>
+                    </ul>
+            </div>
+         </li>
+         {%endfor%}
+        </ul>
+    </div>
+</div>
+
+
+{%endblock%}
